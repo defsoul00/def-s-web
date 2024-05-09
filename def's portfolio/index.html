@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defsoul Responsive Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="navbar">
+            <img src="logo.png" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li> <a href="">Home</a></li>
+                    <li> <a href="">About Me</a></li>
+                    <li> <a href="">My Projects</a></li>
+                    <li> <a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="menu.png" class="menu-icon" 
+            onclick="togglemenu()">
+        </div>
+
+        <div class="row">
+           <div class="ars-1">
+            <h2>Defsoul <br>Web Site</h2>
+            <h3>Responsive Site</h3>
+            <p>def</p>
+            <h4>welcome to!</h4>
+            <button type="button">Come Here <img src="arrow.png"</button>
+           </div>
+           <div class="ars-2">
+            <img src="workspace.jpg" class="workspace">
+            <div class="color-box"></div>
+            <div class="add-btn">
+                <img src="add.png">
+                <p> <small>Add note</small></p>
+            </div>
+           </div>
+        </div>
+
+        <div class="social-links">
+            <img src="fb.png">
+            <img src="tw.png">
+            <img src="ig.png"> 
+        </div>
+
+    </div>
+    
+    <script>
+        
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight - "0px";
+
+        function togglemenu(){
+            if( menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "130px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+
+    </script>
+
+
+</body>
+</html>
